@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({
 app.use(flash());
 app.set('view engine', 'ejs');
 
-// Backup variables in the event of environment variable issues.  See README
+// Backup variables in the event of environment variable issues
 var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp';
 var sessionSecret = process.env.SESSION_SECRET || 'This is a backup secret';
 
