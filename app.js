@@ -30,7 +30,7 @@ app.use(flash());
 app.set('view engine', 'ejs');
 
 // Backup variables in the event of environment variable issues
-var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp';
+var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/camp_up';
 var sessionSecret = process.env.SESSION_SECRET || 'This is a backup secret';
 
 mongoose.connect(databaseURL);
